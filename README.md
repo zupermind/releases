@@ -4,13 +4,13 @@ A powerful command-line interface for Monotone Co-Design Problems (MCDP) operati
 
 ## 🖥️ Platform Support
 
-| Operating System | Architecture  | Status       |
-|------------------|---------------|--------------|
-| Ubuntu 22        | x86_64, ARM64 | ✅ Supported |
-| Ubuntu 24        | x86_64, ARM64 | ✅ Supported |
-| Debian           | x86_64, ARM64 | ✅ Supported |
-| macOS 15         | Intel, Apple Silicon | ✅ Supported |
-| Windows 11       | x86_64, ARM64 | 🧪 Experimental |
+| Operating System | Architecture         | Status          |
+|------------------|----------------------|-----------------|
+| Ubuntu 22        | x86_64, ARM64        | ✅ Supported     |
+| Ubuntu 24        | x86_64, ARM64        | ✅ Supported     |
+| Debian           | x86_64, ARM64        | ✅ Supported     |
+| macOS 15         | Intel, Apple Silicon | ✅ Supported     |
+| Windows 11       | x86_64, ARM64        | 🧪 Experimental |
 
 ## 📋 Prerequisites
 
@@ -107,11 +107,8 @@ curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/d
 .\mcdp.exe version
 ```
 
-#### Windows Subsystem for Linux (WSL)
 
-If using WSL, download the **Ubuntu** version instead and follow the Linux instructions.
-
-**💡 Tip:** This is a CLI tool. If you double-click the .exe file, you'll see instructions on how to use it from a terminal.
+**💡 Tip:** This is a CLI tool. If you double-click the .exe file, you'll see nothing; you have to use it from a terminal.
 
 </details>
 
