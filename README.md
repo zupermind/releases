@@ -8,6 +8,7 @@ A powerful command-line interface for Monotone Co-Design Problems (MCDP) operati
 |------------------|---------------|--------------|
 | Ubuntu 22        | x86_64, ARM64 | ✅ Supported |
 | Ubuntu 24        | x86_64, ARM64 | ✅ Supported |
+| Debian           | x86_64, ARM64 | ✅ Supported |
 | macOS 15         | Intel, Apple Silicon | ✅ Supported |
 | Windows 11       | x86_64, ARM64 | 🧪 Experimental |
 
@@ -26,7 +27,7 @@ Download the appropriate binary for your system from the [latest releases](https
 ### Platform-Specific Instructions
 
 <details>
-<summary><b>🐧 Linux (Ubuntu)</b></summary>
+<summary><b>🐧 Linux (Ubuntu/Debian)</b></summary>
 
 1. Download the binary for your architecture
 2. Make it executable:
@@ -77,12 +78,23 @@ Replace `[VERSION]` with the actual version number from the releases page.
 
 **⚠️ Note:** Windows support is currently experimental. Please report any issues you encounter.
 
-#### Native Windows (PowerShell/Command Prompt)
+#### Option 1: Windows Installer (Recommended)
 
-1. Download the `.exe` file for your architecture
+Download and run the installer for your architecture:
+- **x64**: `mcdp-cli-[VERSION]-windows-amd64-installer.exe`
+- **ARM64**: `mcdp-cli-[VERSION]-windows-arm64-installer.exe`
+
+The installer will:
+- Install the MCDP CLI to `C:\Program Files\MCDP`
+- Optionally add it to your system PATH (recommended)
+- Allow uninstallation through Windows Settings
+
+#### Option 2: Manual Installation (PowerShell/Command Prompt)
+
+1. Download the standalone `.exe` file for your architecture
 2. **If downloaded via browser:** You may see security warnings - click "More info" → "Run anyway"
 
-#### Recommended Installation (via PowerShell):
+#### Manual Installation via PowerShell:
 
 ```powershell
 # For x64
