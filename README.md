@@ -127,6 +127,8 @@ This command will:
 - Download and install it automatically
 - Preserve your current settings
 
+**Note for Windows users:** You may need to run PowerShell as Administrator when using the `mcdp update` command if MCDP was installed with the installer to `C:\Program Files\MCDP`.
+
 ## 🎯 Getting Started
 
 Once installed, you can:
