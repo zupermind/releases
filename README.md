@@ -22,7 +22,7 @@ A powerful command-line interface for Monotone Co-Design Problems (MCDP) operati
 
 ### Quick Install
 
-Download the appropriate binary for your system from the [latest releases](https://github.com/zupermind/mcdp-binaries/releases/latest).
+Download the appropriate binary for your system from the [latest releases](https://github.com/zupermind/releases/releases/latest).
 
 ### Platform-Specific Instructions
 
@@ -54,10 +54,10 @@ Download the appropriate binary for your system from the [latest releases](https
 
 ```bash
 # For Apple Silicon Macs (M1/M2/M3)
-curl -L -o mcdp https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-cli-[VERSION]-macos15-arm64
+curl -L -o mcdp https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-[VERSION]-macos15-arm64
 
 # For Intel Macs
-curl -L -o mcdp https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-cli-[VERSION]-macos15-amd64
+curl -L -o mcdp https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-[VERSION]-macos15-amd64
 
 # Make executable
 chmod +x mcdp
@@ -81,13 +81,15 @@ Replace `[VERSION]` with the actual version number from the releases page.
 #### Option 1: Windows Installer (Recommended)
 
 Download and run the installer for your architecture:
-- **x64**: `mcdp-cli-[VERSION]-windows-amd64-installer.exe`
-- **ARM64**: `mcdp-cli-[VERSION]-windows-arm64-installer.exe`
+- **x64**: `mcdp-[VERSION]-windows-amd64-installer.exe`
+- **ARM64**: `mcdp-[VERSION]-windows-arm64-installer.exe`
 
 The installer will:
 - Install the MCDP CLI to `C:\Program Files\MCDP`
 - Optionally add it to your system PATH (recommended)
 - Allow uninstallation through Windows Settings
+
+**Important:** After installation, you'll need to open a new PowerShell or Command Prompt window for the PATH changes to take effect.
 
 #### Option 2: Manual Installation (PowerShell/Command Prompt)
 
@@ -98,10 +100,10 @@ The installer will:
 
 ```powershell
 # For x64
-curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-cli-[VERSION]-windows-amd64.exe
+curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-[VERSION]-windows-amd64.exe
 
 # For ARM64
-curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-cli-[VERSION]-windows-arm64.exe
+curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/download/mcdp-[VERSION]-windows-arm64.exe
 
 # Verify installation
 .\mcdp.exe version
@@ -117,7 +119,7 @@ curl -L -o mcdp.exe https://github.com/zupermind/mcdp-binaries/releases/latest/d
 The MCDP CLI includes a built-in self-update feature:
 
 ```bash
-mcdp-cli update
+mcdp update
 ```
 
 This command will:
@@ -136,6 +138,8 @@ mcdp help
 # Check version
 mcdp version
 ```
+
+**Note:** On Windows, the executable is `mcdp.exe`, but you can simply type `mcdp` in your terminal.
 
 ## 📚 Documentation
 
