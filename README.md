@@ -145,7 +145,7 @@ mcdp version
 
 ## 📚 Documentation
 
-For detailed usage instructions and examples, visit our [documentation](https://docs.mcdp.org).
+For detailed usage instructions and examples, visit the [documentation](https://editor.zuper.ai/editor/docs/).
 
 ## 🐛 Troubleshooting
 
